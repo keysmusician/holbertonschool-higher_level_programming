@@ -17,7 +17,7 @@ These **Higher-level programming** projects exhibit my understanding of **high-l
 
 ## Projects
 ### Second Trimester:
-1. [0x00](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/main/0x00-hello_world) - Hell
+1. [0x00. Python - Hello, World](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/main/0x00-hello_world)
 
 ## Author
 Justin Masayda [@keysmusician](https://github.com/keysmusician)
