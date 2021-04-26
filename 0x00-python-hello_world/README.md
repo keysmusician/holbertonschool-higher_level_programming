@@ -4,20 +4,18 @@
   </a>
 </p>
 
-# Higher-level programming - Python
-Assignments in [Holberton School's](https://www.holbertonschool.com/) Foundations curriculum.
+# 0x00. Python - Hello, World
 
 ## Table of Contents
 * [About](#about)
-* [Projects](#projects)
+* [Files](#files)
 * [Author](#author)
 
 ## About
-These **Higher-level programming** projects exhibit my understanding of **high-level programming** concepts. These concepts were practiced using **Python**.
+This project is an introduction to **high-level** programming with Python.
 
-## Projects
-### Second Trimester:
-1. [0x00](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/main/0x00-hello_world) - Hell
+## Files
+* `FILE`
 
 ## Author
 Justin Masayda [@keysmusician](https://github.com/keysmusician)
@@ -29,4 +27,4 @@ Justin Masayda [@keysmusician](https://github.com/keysmusician)
  /___/___/___/___/___/___/___/___/___/___/___/___/___/___/ /
 |___|___|___|___|___|___|___|___|___|___|___|___|___|___|/
 </pre>
-<p><span style="font-family: 'Lucida Console'; line-height: 14px; font-size: 14px; display: inline-block;">&nbsp;</span></p>  
+<p><span style="font-family: 'Lucida Console'; line-height: 14px; font-size: 14px; display: inline-block;">&nbsp;</span></p>
