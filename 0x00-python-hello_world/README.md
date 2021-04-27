@@ -12,7 +12,7 @@
 * [Author](#author)
 
 ## About
-This project is an introduction to **high-level** programming with Python.
+This project is an introduction to **high-level** programming with Python. I did simple tasks such as **variable assignment**, formatting strings with the **format() method**, and **list slicing**. I also attempted to write the most efficient algorithm to identify loops/cycles in a singly-linked list (though the solution I came up with is not the most efficient solution).
 
 ## Files
 * `FILE`
