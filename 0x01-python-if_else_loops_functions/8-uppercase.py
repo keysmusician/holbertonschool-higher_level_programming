@@ -6,6 +6,3 @@ def uppercase(str):
         else:
             print(c, end='')
     print('')
-
-uppercase("holberton")
-uppercase("Holberton School 98 Battery street")
