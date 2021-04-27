@@ -15,7 +15,21 @@
 This project is an introduction to **high-level** programming with Python. I did simple tasks such as **variable assignment**, formatting strings with the **format() method**, and **list slicing**. I also attempted to write the most efficient algorithm to identify loops/cycles in a singly-linked list (though the solution I came up with is not the most efficient solution).
 
 ## Files
-* `FILE`
+* `0-run`
+* `1-run_inline`
+* `2-print.py`
+* `3-print_number.py`
+* `4-print_float.py`
+* `5-print_string.py`
+* `6-concat.py`
+* `7-edges.py`
+* `8-concat_edges.py`
+* `9-easter_egg.py`
+* `10-check_cycle.c`
+* `100-write.py`
+* `101-compile`
+* `102-magic_calculation.py`
+* `lists.h`
 
 ## Author
 Justin Masayda [@keysmusician](https://github.com/keysmusician)
