@@ -4,7 +4,8 @@ if __name__ == "__main__":
 
     n_args = len(argv) - 1
     if n_args > 0:
-        print("{} arguments:".format(n_args))
+        s = "s" if n_args > 1 else ""
+        print("{} argument{}:".format(n_args, s))
         for i, arg in enumerate(argv[1:], 1):
             print("{}: {}".format(i, arg))
     else:
