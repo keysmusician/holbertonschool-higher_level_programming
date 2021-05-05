@@ -15,17 +15,26 @@
 In this project, learned how to create and **import Python modules**.
 
 ## Files
-* `0-add.py`
-* `1-calculation.py`
-* `2-args.py`
-* `3-infinite_add.py`
-* `4-hidden_discovery.py`
-* `5-variable_load.py`
+* `0-print_list_integer.py`
+* `1-element_at.py`
+* `2-replace_in_list.py`
+* `3-print_reversed_list_integer.py`
+* `4-new_in_list.py`
+* `5-no_c.py`
+* `6-print_matrix_integer.py`
+* `7-add_tuple.py`
+* `8-multiple_returns.py`
+* `9-max_integer.py`
+* `10-divisible_by_2.py`
+* `11-delete_at.py`
+* `12-switch.py`
+* `13-is_palindrome.c`
+* `lists.h`
 
 ## Author
 Justin Masayda [@keysmusician](https://github.com/keysmusician)
 <pre align="center">
-      _   _       _   _   _       _   _       _   _   _
+     _   _       _   _   _       _   _       _   _   _
      ___//|_//|_____//|_//|_//|_____//|_//|_____//|_//|_//|___
      /  /// ///  /  /// /// ///  /  /// ///  /  /// /// ///  / |
    /  ||/ ||/  /  ||/ ||/ ||/  /  ||/ ||/  /  ||/ ||/ ||/  / /
