@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# 0x02. Python - import & modules
+# 0x03. Python - Data Structures: Lists, Tuples
 
 ## Table of Contents
 * [About](#about)
