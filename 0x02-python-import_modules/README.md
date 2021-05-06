@@ -12,7 +12,7 @@
 * [Author](#author)
 
 ## About
-In this project, learned how to create and **import Python modules**.
+In this project, I learned how to create and **import Python modules**, and how to prevent scripts from running if imported.
 
 ## Files
 * `0-add.py`
@@ -21,6 +21,11 @@ In this project, learned how to create and **import Python modules**.
 * `3-infinite_add.py`
 * `4-hidden_discovery.py`
 * `5-variable_load.py`
+* `100-my_calculator.py`
+* `101-easy_print.py`
+* `102-magic_calculation.py`
+* `103-fast_alphabet.py`
+* `literallyanything.py`
 
 ## Author
 Justin Masayda [@keysmusician](https://github.com/keysmusician)
