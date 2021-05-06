@@ -12,7 +12,7 @@
 * [Author](#author)
 
 ## About
-In this project, learned how to create and **import Python modules**.
+In this project, I worked with **lists**, **list comprehention** and **tuples**. I also learned how to interact with Python objects via C using the **Python/C API**. Additonally, I wrote an algorithm to determine if a singly-linked list is a palindrome.
 
 ## Files
 * `0-print_list_integer.py`
@@ -29,6 +29,7 @@ In this project, learned how to create and **import Python modules**.
 * `11-delete_at.py`
 * `12-switch.py`
 * `13-is_palindrome.c`
+* `100-print_python_list_info.c`
 * `lists.h`
 
 ## Author
