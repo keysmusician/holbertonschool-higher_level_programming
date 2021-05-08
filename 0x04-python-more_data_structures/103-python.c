@@ -38,16 +38,17 @@ void print_python_list(PyObject *p)
 {
 	Py_ssize_t index, len = PyList_Size(p);
 	PyObject *listel;
+	PyListObject *list;
 
+	list = (PyListObject *)p;
 	printf("[*] Python list info\n");
 	printf("[*] Size of the Python List = %li\n", len);
-	printf("[*] Allocated = %i\n", 0); /* Incorrect; Find the correct function */
+	printf("[*] Allocated = %li\n",list->allocated);
 
 	for (index = 0; index < len; index++)
 	{
-		listel = PyList_GetItem(p, index); // Replace this function
-		printf("Element %li: %s\n",
-				index, Py_TYPE(listel)->tp_name); // Don't use Py_TYPE
+		listel = list->ob_item[index];
+		printf("Element %li: %s\n", index, listel->ob_type->tp_name);
 		if (PyBytes_CheckExact(listel))
 			print_python_bytes(listel);
 	}
