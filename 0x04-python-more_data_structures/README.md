@@ -12,7 +12,7 @@
 * [Author](#author)
 
 ## About
-In this project, learned about **lambda functions, sets,** and **dictionaries**.
+In this project, I learned about **lambda functions, sets,** and **dictionaries**.
 
 ## Files
 * `0-square_matrix_simple.py`
