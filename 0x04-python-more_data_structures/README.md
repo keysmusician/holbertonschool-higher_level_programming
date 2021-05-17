@@ -28,6 +28,10 @@ In this project, I learned about **lambda functions, sets,** and **dictionaries*
 * `10-best_score.py`
 * `11-multiply_list_map.py`
 * `12-roman_to_int.py`
+* `100-weight_average.py`
+* `101-square_matrix_map.py`
+* `102-complex_delete.py`
+* `103-python.c`
 
 ## Author
 Justin Masayda [@keysmusician](https://github.com/keysmusician)
