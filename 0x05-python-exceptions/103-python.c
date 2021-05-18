@@ -40,6 +40,8 @@ void print_python_float(PyObject *p)
 {
 	PyFloatObject *pyflop; // PyFloatObject pointer
 	double value;
+	char buf[32];
+	int index, n = 0;
 
 	pyflop = (PyFloatObject *)p;
 	setbuf(stdout, NULL);
@@ -51,7 +53,24 @@ void print_python_float(PyObject *p)
 	}
 
 	value = pyflop->ob_fval;
-	printf("	value: %.16g\n", value);
+
+	sprintf(buf, "%.20g", value);
+	if (strspn(buf, "0123456789-") == strlen(buf))
+		strcat(buf, ".0");
+
+	printf("	value: ");
+
+	if (buf[0] == '-')
+		n = 1;
+	for (index = 0; index < 18; index++)
+	{
+		if (index > (2 + n) && (!isdigit(buf[index]) || buf[index] == '0' ))
+			break;
+		else
+			printf("%c", buf[index]);
+	}
+	printf("\n");
+
 }
 
 /**
