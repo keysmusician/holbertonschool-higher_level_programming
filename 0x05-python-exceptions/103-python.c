@@ -58,7 +58,7 @@ void print_python_float(PyObject *p)
 	if (strspn(buf, "0123456789-") == strlen(buf))
 		strcat(buf, ".0");
 
-	printf("	value: ");
+	printf("  value: ");
 
 	if (buf[0] == '-')
 		n = 1;
