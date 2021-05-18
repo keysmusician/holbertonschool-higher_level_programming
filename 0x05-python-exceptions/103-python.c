@@ -51,7 +51,7 @@ void print_python_float(PyObject *p)
 	}
 
 	value = PyFloat_AsDouble(p);
-	printf("	value: %.16g\n", value);
+	printf("	value: %.1f\n", value);
 }
 
 /**
