@@ -33,7 +33,7 @@ class Square:
 
     @property
     def size(self):
-        """Get the size of the square."""
+        """Get the square's size."""
         return self.__size
 
     @property
