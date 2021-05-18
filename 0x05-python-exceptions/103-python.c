@@ -25,7 +25,7 @@ void print_python_bytes(PyObject *p)
 	printf("  trying string: %s\n", pbop->ob_sval);
 
 	// Cap size at 10 bytes for the following loop
-	size = size > 10 ? 10 : size + 1;
+	size = size >= 10 ? 10 : size + 1;
 	printf("  first %li bytes:", size);
 	for (i = 0; i < size; i++)
 		printf(" %02x", 0xff & pbop->ob_sval[i]);

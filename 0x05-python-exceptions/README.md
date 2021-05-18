@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# 0x04. Python - More Data Structures: Set, Dictionary
+# 0x05. Python - Exceptions
 
 ## Table of Contents
 * [About](#about)
@@ -15,7 +15,17 @@
 In this project, I learned about **exception handling.**
 
 ## Files
-
+* `0-safe_print_list.py`
+* `1-safe_print_integer.py`
+* `2-safe_print_list_integers.py`
+* `3-safe_print_division.py`
+* `4-list_division.py`
+* `5-raise_exception.py`
+* `6-raise_exception_msg.py`
+* `100-safe_print_integer_err.py`
+* `101-safe_function.py`
+* `102-magic_calculation.py`
+* `103-python.c`
 
 ## Author
 Justin Masayda [@keysmusician](https://github.com/keysmusician)
