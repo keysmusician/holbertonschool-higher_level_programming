@@ -50,8 +50,8 @@ void print_python_float(PyObject *p)
 		return;
 	}
 
-	value = PyFloat_AsDouble(p);
-	printf("	value: %.1f\n", value);
+	value = pyflop->ob_fval;
+	printf("	value: %.16g\n", value);
 }
 
 /**
