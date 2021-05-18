@@ -22,6 +22,8 @@ These **Higher-level programming** projects exhibit my understanding of **high-l
 3. [0x02. Python - import & modules](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x02-python-import_modules)
 4. [0x03. Python - Data Structures: Lists, Tuples](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x03-python-data_structures)
 5. [0x04. Python - More Data Structures: Set, Dictionary](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x04-python-more_data_structures)
+6. [0x05. Python - Exceptions](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x05-python-exceptions)
+7. [0x06. Python - Classes and Objects](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x06-python-classes)
 
 ## Author
 Justin Masayda [@keysmusician](https://github.com/keysmusician)
