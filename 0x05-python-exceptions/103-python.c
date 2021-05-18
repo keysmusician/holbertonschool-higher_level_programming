@@ -54,7 +54,7 @@ void print_python_float(PyObject *p)
 
 	value = pyflop->ob_fval;
 
-	sprintf(buf, "%.20g", value);
+	sprintf(buf, "%.16g", value);
 	if (strspn(buf, "0123456789-") == strlen(buf))
 		strcat(buf, ".0");
 
