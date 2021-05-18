@@ -61,10 +61,12 @@ void print_python_float(PyObject *p)
 void print_python_list(PyObject *p)
 {
 	Py_ssize_t index, len;
+	PyVarObject *varlist;
 	PyObject *listel;
 	PyListObject *list;
 
 	list = (PyListObject *)p;
+	varlist = (PyVarObject *)p;
 	setbuf(stdout, NULL);
 	printf("[*] Python list info\n");
 	if (!PyList_CheckExact(list))
@@ -72,7 +74,9 @@ void print_python_list(PyObject *p)
 		printf("  [ERROR] Invalid List Object\n");
 		return;
 	}
-	len = PyList_Size(p);
+
+	len = varlist->ob_size;
+
 	printf("[*] Size of the Python List = %li\n", len);
 	printf("[*] Allocated = %li\n", list->allocated);
 
