@@ -18,20 +18,24 @@ void print_python_bytes(PyObject *p)
 		printf("  [ERROR] Invalid Bytes Object\n");
 		return;
 	}
+	pbop = (PyBytesObject *)p;
 
 	size = PyBytes_Size(p);
 	printf("  size: %li\n", size);
-	printf("  trying string: %s\n", PyBytes_AsString(p));
+	printf("  trying string: %s\n", pbop->ob_sval);
 
 	// Cap size at 10 bytes for the following loop
 	size = size > 10 ? 10 : size + 1;
-	pbop = (PyBytesObject *)p;
 	printf("  first %li bytes:", size);
 	for (i = 0; i < size; i++)
 		printf(" %02x", 0xff & pbop->ob_sval[i]);
 	printf("\n");
 }
 
+/**
+ * print_python_float - Print information about python float objects.
+ * @p: python object pointer (expecting float object)
+ */
 void print_python_float(PyObject *p)
 {
 	PyFloatObject *pyflop; // PyFloatObject pointer
