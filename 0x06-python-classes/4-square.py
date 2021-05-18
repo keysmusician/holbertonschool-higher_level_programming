@@ -12,7 +12,7 @@ class Square:
         Args:
             size (int): A positive integer as the size of the new square.
         """
-        self.__size = size
+        self.size = size
 
     def area(self):
         """Calculate the area of the square."""
