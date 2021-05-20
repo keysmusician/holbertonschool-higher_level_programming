@@ -13,7 +13,7 @@ Assignments in [Holberton School's](https://www.holbertonschool.com/) Foundation
 * [Author](#author)
 
 ## About
-These **Higher-level programming** projects exhibit my understanding of **high-level programming** concepts. These concepts were practiced using **Python**.
+These projects exhibit my understanding of **high-level programming** concepts. These concepts were practiced using **Python**.
 
 ## Projects
 ### Trimester 2:
@@ -24,6 +24,7 @@ These **Higher-level programming** projects exhibit my understanding of **high-l
 5. [0x04. Python - More Data Structures: Set, Dictionary](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x04-python-more_data_structures)
 6. [0x05. Python - Exceptions](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x05-python-exceptions)
 7. [0x06. Python - Classes and Objects](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x06-python-classes)
+8. [0x07. Python - Test-driven development](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x07-python-test_driven_development)
 
 ## Author
 Justin Masayda [@keysmusician](https://github.com/keysmusician)
