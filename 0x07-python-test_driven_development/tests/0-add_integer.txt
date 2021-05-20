@@ -1,0 +1,43 @@
+The "Add Integer" module
+======================
+
+Using "add_integer"
+-------------------
+
+This is my first text file in reStructuredText format.
+
+First, import add_integer from the 0-add_integer module:
+
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Now use it:
+
+	>>> add_integer(0,0)
+	0
+
+	>>> add_integer(6, 7)
+	13
+
+	>>> add_integer(-99, -1)
+	-100
+
+	Floats are truncated:
+	>>> add_integer(5.25, 4.75)
+	9
+
+	Only 'float' and 'int' types are allowed:
+	>>> add_integer('5', 6)
+	Traceback (most recent call last):
+	  File "0-add_integer.py", line 28, in <module>
+		print(add_integer('a', 3))
+	  File "0-add_integer.py", line 22, in add_integer
+		raise TypeError("a must be an integer")
+	TypeError: a must be an integer
+
+	>>> add_integer(2, 'hello')
+	Traceback (most recent call last):
+	  File "0-add_integer.py", line 28, in <module>
+		print(add_integer('a', 3))
+	  File "0-add_integer.py", line 22, in add_integer
+		raise TypeError("a must be an integer")
+	TypeError: b must be an integer
