@@ -12,7 +12,7 @@
 * [Author](#author)
 
 ## About
-This project is an introduction to **Object Oriented programming.** I learned how to create and use **classes.**
+This project is an introduction to **Object Oriented programming.** I learned how to create and use **classes,** along with concepts like **attributes, properties, methods,** and **fields.**
 
 ## Files
 * `0-square.py`
