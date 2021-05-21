@@ -1,0 +1,24 @@
+Doctest for "3-say_my_name" module
+======================
+
+Using "say_my_name"
+-------------------
+
+Import say_my_name from 3-say_my_name:
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Tests:
+	>>> say_my_name("Justin", "Masayda")
+	My name is Justin Masayda
+
+	>>> say_my_name("Justin")
+	My name is Justin # Ends with whitespace
+
+	>>> say_my_name(4)
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+	>>> say_my_name("Justin", False)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
