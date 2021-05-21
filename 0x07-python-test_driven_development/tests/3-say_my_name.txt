@@ -12,8 +12,8 @@ Tests:
 	>>> say_my_name("Justin", "Masayda")
 	My name is Justin Masayda
 
-	>>> say_my_name("Justin")
-	My name is Justin # Ends with whitespace
+	>>> say_my_name("Justin") # doctest: +NORMALIZE_WHITESPACE
+	My name is Justin
 
 	>>> say_my_name(4)
 	Traceback (most recent call last):
