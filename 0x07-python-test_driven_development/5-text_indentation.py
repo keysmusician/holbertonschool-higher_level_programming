@@ -15,3 +15,4 @@ def text_indentation(text):
         if c in ".:?":
             print(text[start:i + 1].lstrip() + "\n")
             start = i + 1
+    print(text[start:].strip(), end='')
