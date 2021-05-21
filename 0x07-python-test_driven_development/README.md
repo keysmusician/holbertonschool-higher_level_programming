@@ -12,7 +12,7 @@
 * [Author](#author)
 
 ## About
-This project introduced the concept of **test-driven development.**
+This project introduced the concept of **test-driven development.** I learned how to use the **doctest** and **unittest** modules to test functions.
 
 ## Files
 * `0-add_integer.py`
