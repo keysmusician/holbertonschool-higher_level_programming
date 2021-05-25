@@ -18,8 +18,7 @@ class Rectangle:
 
     def __repr__(self):
         """Return a string that will construct this rectangle if called."""
-        return "{:s}({:d},{:d})".format(
-            type(self).__name__, self.width, self.height)
+        return "Rectangle({:d}, {:d})".format(self.width, self.height)
 
     @property
     def width(self):
