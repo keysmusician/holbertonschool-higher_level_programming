@@ -19,7 +19,7 @@ class Rectangle:
         """Represent this rectangle with the 'print_symbol' class attribute."""
         if self.width == 0 or self.height == 0:
             return ""
-        symbol = self.__class__.print_symbol
+        symbol = str(self.print_symbol)
         row = (self.width * symbol + "\n")
         return (row * self.height)[:-1]
 
@@ -69,3 +69,28 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return 0
         return 2 * self.width + 2 * self.height
+
+
+my_rectangle_1 = Rectangle(8, 4)
+print(my_rectangle_1)
+print("--")
+my_rectangle_1.print_symbol = "&"
+print(my_rectangle_1)
+print("--")
+
+my_rectangle_2 = Rectangle(2, 1)
+print(my_rectangle_2)
+print("--")
+Rectangle.print_symbol = "C"
+print(my_rectangle_2)
+print("--")
+
+my_rectangle_3 = Rectangle(7, 3)
+print(my_rectangle_3)
+
+print("--")
+
+my_rectangle_3.print_symbol = ["C", "is", "fun!"]
+print(my_rectangle_3)
+
+print("--")
