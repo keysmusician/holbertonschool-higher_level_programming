@@ -13,6 +13,7 @@
 
 ## About
 This project is an introduction to **Object Oriented programming.** I learned how to create and use **classes,** along with concepts like **attributes, properties, methods,** and **fields.**
+I also learned how to use **public, protected, and private attributes.**
 
 ## Files
 * `0-square.py`
