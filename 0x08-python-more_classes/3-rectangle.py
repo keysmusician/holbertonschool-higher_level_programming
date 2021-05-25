@@ -10,6 +10,12 @@ class Rectangle:
         self.width = width
         self.height = height
 
+    def __str__(self):
+        """Represent this rectangle with '#' characters."""
+        if self.width == 0 or self.height == 0:
+            return ''
+        return ((self.width * '#' + '\n') * self.height)[:-1]
+
     @property
     def width(self):
         """Get width of this rectangle."""
@@ -44,11 +50,6 @@ class Rectangle:
 
     def perimeter(self):
         """Get perimeter of this rectangle."""
-        if self.width > 0 and self.height > 0:
-            return 2 * self.width + 2 * self.height
-        else:
+        if self.width == 0 or self.height == 0:
             return 0
-
-    def __str__(self):
-        """Represent this rectangle with '#' characters."""
-        return ((self.width * '#' + '\n') * self.height)[:-1]
+        return 2 * self.width + 2 * self.height
