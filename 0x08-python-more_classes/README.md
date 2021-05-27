@@ -12,7 +12,7 @@
 * [Author](#author)
 
 ## About
-In this project, I learned about **decorator syntax, static methods, and class methods.** I also learned about the special class methods **__str__, __repr__, and __del__.**
+In this project, I learned about **decorator syntax, static methods, and class methods.** I also learned about the special class methods **\_\_str__, \_\_repr__, and \_\_del__.**
 
 ## Files
 * `0-rectangle.py`
