@@ -26,6 +26,7 @@ These projects exhibit my understanding of **high-level programming** concepts. 
 7. [0x06. Python - Classes and Objects](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x06-python-classes)
 8. [0x07. Python - Test-driven development](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x07-python-test_driven_development)
 9. [0x08. Python - More Classes and Objects](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x08-python-more_classes)
+10. [0x09. Python - Everything is object](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x09-python-everything_is_object)
 
 ## Author
 Justin Masayda [@keysmusician](https://github.com/keysmusician)
