@@ -12,7 +12,7 @@
 * [Author](#author)
 
 ## About
-In this project, I learned about object **mutability, small integer caching, string interning** and python's unique **pass-by-assignment.** I read about **metalasses** as well.
+In this project, I learned about object **aliasing, mutability, small integer caching, string interning** and python's unique **pass-by-assignment.** I read about **metalasses** as well.
 
 ## Files
 
