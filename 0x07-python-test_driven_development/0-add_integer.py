@@ -18,9 +18,11 @@ def add_integer(a, b=98):
     >>> add_integer(2, 3)
     5
     """
-    if type(a) not in (int, float):
+    if type(a) not in (int, float) or a != a:
         raise TypeError("a must be an integer")
-    elif type(b) not in (int, float):
+    elif type(b) not in (int, float) or b != b:
         raise TypeError("b must be an integer")
-
+    result = a + b
+    if result == float('inf') or result == -float('inf'):
+        raise OverflowError
     return int(a) + int(b)
