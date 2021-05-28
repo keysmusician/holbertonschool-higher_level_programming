@@ -37,6 +37,11 @@ Now use it:
 	Traceback (most recent call last):
 	TypeError: b must be an integer
 
+	Result must not overflow:
+	>>> add_integer(float('inf'), float('inf'))
+	Traceback (most recent call last):
+	OverflowError
+
 	Argument 'b' defaults to 98:
 	>>> add_integer(0)
 	98
