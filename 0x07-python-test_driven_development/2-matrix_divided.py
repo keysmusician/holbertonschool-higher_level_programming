@@ -12,24 +12,28 @@ Contains a function which divides a matrix.
 """
 
 
-def matrix_divided(matrix, div):
+def matrix_divided(matrix, div=1):
     """Divide all elements of a matrix by a number
 
     Return: a new matrix of the quotients of each element / div
     """
     # Validate input
-    if type(div) not in (int, float):
+    if type(div) not in (int, float) or \
+            div != div or \
+            div in (float('inf'), -float('inf')):
         raise TypeError("div must be a number")
     if div == 0:
         raise ZeroDivisionError("division by zero")
     if type(matrix) is not list:
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        raise TypeError(
+            "matrix must be a matrix (list of lists) of integers/floats")
 
     size = None
     new_matrix = []
     for row in matrix:
         if type(row) is not list:
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            raise TypeError(
+                "matrix must be a matrix (list of lists) of integers/floats")
         if size is None:
             size = len(row)
         elif len(row) is not size:
@@ -38,7 +42,8 @@ def matrix_divided(matrix, div):
         new_row = []
         for n in row:
             if type(n) not in (int, float):
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix (list of lists) \
+of integers/floats")
             new_row.append(round(n / div, 2))
         new_matrix.append(new_row)
 
