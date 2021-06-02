@@ -6,5 +6,5 @@ class BaseGeometry:
     """Describe basic geometric shapes."""
 
     def area(self):
-        """Placeholder area function"""
+        """Placeholder area function."""
         raise Exception("area() is not implemented")
