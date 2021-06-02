@@ -35,6 +35,7 @@ class Rectangle(BaseGeometry):
         """Calculate area of Rectangle."""
         return self.__width * self.__height
 
+
 class Square(Rectangle):
     """Describe a square."""
 
