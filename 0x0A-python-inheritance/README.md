@@ -12,7 +12,7 @@
 * [Author](#author)
 
 ## About
-This project, taught me about **class inheritance** and the `super`, `isinstance`, and `issubclass` methods.
+This project taught me about **class inheritance** and the `super`, `isinstance`, and `issubclass` methods.
 
 ## Files
 * `0-lookup.py`
