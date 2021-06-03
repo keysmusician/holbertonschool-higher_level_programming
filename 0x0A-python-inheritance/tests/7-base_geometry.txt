@@ -10,6 +10,14 @@ Testing "BaseGeometry" class
 
 >>> bg.integer_validator("width", 89)
 
+>>> bg.integer_validator("age", 0)
+Traceback (most recent call last):
+ValueError: age must be greater than 0
+
+>>> bg.integer_validator("distance", -4)
+Traceback (most recent call last):
+ValueError: distance must be greater than 0
+
 >>> bg.integer_validator("name", "John")
 Traceback (most recent call last):
 TypeError: name must be an integer
@@ -26,7 +34,7 @@ TypeError: name must be an integer
 Traceback (most recent call last):
 TypeError: name must be an integer
 
->>> bg.integer_validator("name", float('inf'))
+>>> bg.integer_validator("name", {1, 2})
 Traceback (most recent call last):
 TypeError: name must be an integer
 
@@ -34,18 +42,10 @@ TypeError: name must be an integer
 Traceback (most recent call last):
 TypeError: name must be an integer
 
->>> bg.integer_validator("age", 0)
+>>> bg.integer_validator()
 Traceback (most recent call last):
-ValueError: age must be greater than 0
-
->>> bg.integer_validator("distance", -4)
-Traceback (most recent call last):
-ValueError: distance must be greater than 0
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
 
 >>> bg.area()
 Traceback (most recent call last):
 Exception: area() is not implemented
-
->>> bg.integer_validator()
-Traceback (most recent call last):
-TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
