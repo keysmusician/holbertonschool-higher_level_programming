@@ -11,6 +11,6 @@ if __name__ == "__main__":
     load_from_json = __import__('6-load_from_json_file').load_from_json_file
 
     jsonlist = []
-    with open("add_item.json", "a"):
+    with open("add_item.json", "r+"):
         jsonlist = load_from_json("add_item.json")
     save_to_json(jsonlist + argv[1:], 'add_item.json')
