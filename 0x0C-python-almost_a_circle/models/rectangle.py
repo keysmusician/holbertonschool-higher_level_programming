@@ -103,7 +103,7 @@ class Rectangle(Base):
             for i, arg in enumerate(args):
                 new_vals[i] = arg
             self.id, self.width, self.height, self.x, self.y = new_vals
-
-        for attr, value in kwargs.items():
-            if hasattr(self, attr):
-                setattr(self, attr, value)
+        else:
+            for attr, value in kwargs.items():
+                if hasattr(self, attr):
+                    setattr(self, attr, value)
