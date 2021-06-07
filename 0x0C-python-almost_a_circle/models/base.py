@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Base class for project 0x0C. Python - Almost a circle
+Base class for project 0x0C. Python - Almost a circle.
 
 """
 
