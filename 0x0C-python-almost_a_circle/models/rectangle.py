@@ -93,12 +93,17 @@ class Rectangle(Base):
         # Remove trailing newline
         print(text_rectangle[:-1])
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Update attributes."""
-        # Set default values for attributes
-        new_args = [self.id, self.width, self.height, self.x, self.y]
-        # Replace default values with values provided from 'args'
-        for i, arg in enumerate(args):
-            new_args[i] = arg
 
-        self.id, self.width, self.height, self.x, self.y = new_args
+        if len(args):
+            # Set default values for attributes
+            new_vals = [self.id, self.width, self.height, self.x, self.y]
+            # Replace default values with values provided from 'args', if any
+            for i, arg in enumerate(args):
+                new_vals[i] = arg
+            self.id, self.width, self.height, self.x, self.y = new_vals
+
+        for attr, value in kwargs.items():
+            if hasattr(self, attr):
+                setattr(self, attr, value)
