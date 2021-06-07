@@ -90,4 +90,15 @@ class Rectangle(Base):
         x_offset = ' ' * self.x
         row = (x_offset + '#' * self.width + '\n')
         text_rectangle = y_offset + (row * self.height)
+        # Remove trailing newline
         print(text_rectangle[:-1])
+
+    def update(self, *args):
+        """Update attributes."""
+        # Set default values for attributes
+        new_args = [self.id, self.width, self.height, self.x, self.y]
+        # Replace default values with values provided from 'args'
+        for i, arg in enumerate(args):
+            new_args[i] = arg
+
+        self.id, self.width, self.height, self.x, self.y = new_args
