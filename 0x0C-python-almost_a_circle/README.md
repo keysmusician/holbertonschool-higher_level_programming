@@ -12,7 +12,7 @@
 * [Author](#author)
 
 ## About
-This project served to review all the concepts I learned in Python up to this point and as preparation forThe AirBnB project.
+This project served to review all the concepts I learned in Python up to this point and as preparation for the AirBnB project.
 
 ## Files
 
