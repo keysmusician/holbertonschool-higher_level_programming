@@ -95,7 +95,6 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """Update attributes."""
-
         if len(args):
             # Set default values for attributes
             new_vals = [self.id, self.width, self.height, self.x, self.y]
@@ -107,3 +106,8 @@ class Rectangle(Base):
             for attr, value in kwargs.items():
                 if hasattr(self, attr):
                     setattr(self, attr, value)
+
+    def to_dictionary(self):
+        """Return this object's dictionary of attributes."""
+        keys = ['id', 'width', 'height', 'x', 'y']
+        return {key: getattr(self, key) for key in keys}
