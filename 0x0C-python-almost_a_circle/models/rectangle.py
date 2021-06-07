@@ -86,5 +86,8 @@ class Rectangle(Base):
 
     def display(self):
         """Print rectangle in text."""
-        text_rectangle = ('#' * self.width + '\n') * self.height
-        print(text_rectangle)
+        y_offset = '\n' * self.y
+        x_offset = ' ' * self.x
+        row = (x_offset + '#' * self.width + '\n')
+        text_rectangle = y_offset + (row * self.height)
+        print(text_rectangle[:-1])
