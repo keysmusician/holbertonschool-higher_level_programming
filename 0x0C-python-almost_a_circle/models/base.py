@@ -23,7 +23,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """Return the JSON representation of a list of dictionaries."""
+        """Return the JSON serialization of a list of dictionaries."""
         if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
         return json.dumps(list_dictionaries)
@@ -38,6 +38,7 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
+        """Deserialize and return a list of dictionaries in JSON format."""
         if json_string is None or json_string == "":
             return []
         return json.loads(json_string)
