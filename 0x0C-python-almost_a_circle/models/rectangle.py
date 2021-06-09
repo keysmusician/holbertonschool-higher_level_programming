@@ -89,7 +89,8 @@ class Rectangle(Base):
         row = (x_offset + '#' * self.width + '\n')
         text_rectangle = y_offset + (row * self.height)
         # Remove trailing newline
-        print(text_rectangle[:-1])
+        print(text_rectangle, end='')
+        return text_rectangle
 
     def update(self, *args, **kwargs):
         """Update attributes."""
