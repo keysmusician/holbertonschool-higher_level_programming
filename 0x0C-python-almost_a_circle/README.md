@@ -15,7 +15,16 @@
 This project served to review all the concepts I learned in Python up to this point and as preparation for the AirBnB project.
 
 ## Files
-
+* `README.md`
+* `models/`
+	* `base.py`
+	* `rectangle.py`
+	* `square.py`
+* `tests/`
+	* `test_models/`
+		* `test_base.py`
+		* `test_rectangle.py`
+		* `test_square.py`
 
 ## Author
 Justin Masayda [@keysmusician](https://github.com/keysmusician)
