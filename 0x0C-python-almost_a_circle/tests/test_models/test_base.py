@@ -36,6 +36,7 @@ class TestBase(unittest.TestCase):
             Base(1, 2)
 
     def test_to_json_string(self):
+        """Test to_json_string."""
         string = Base.to_json_string([])
         self.assertEqual(string, "[]")
 
@@ -43,6 +44,7 @@ class TestBase(unittest.TestCase):
             Base.to_json_string()
 
     def test_from_json_string(self):
+        """Test from_json_string."""
         l = Base.from_json_string("[]")
         self.assertEqual(l, [])
 
