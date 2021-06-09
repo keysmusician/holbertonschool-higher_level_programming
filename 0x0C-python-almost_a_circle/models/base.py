@@ -49,7 +49,10 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """Return an instance of 'cls' with attributes in 'dictionary'."""
-        instance = cls(1, 1)
+        try:
+            instance = cls(1)
+        except TypeError:
+            instance = cls(1, 1)
         instance.update(**dictionary)
         return instance
 
