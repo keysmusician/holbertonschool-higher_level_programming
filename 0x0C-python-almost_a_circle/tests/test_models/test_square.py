@@ -97,8 +97,14 @@ class TestSquare(unittest.TestCase):
 
     def test_display(self):
         """Test display."""
+        s = Square(1)
+        self.assertEqual(s.display(), "#\n")
+
         s = Square(1, 1)
-        self.assertEqual(s.display(), None)
+        self.assertEqual(s.display(), " #\n")
+
+        s = Square(1, 1, 1)
+        self.assertEqual(s.display(), "\n #\n")
 
         # Bad argument count
         with self.assertRaises(TypeError):
@@ -235,6 +241,12 @@ class TestSquare(unittest.TestCase):
             contents = file.read()
             self.assertEqual(eval(contents), equal)
 
+        equal = []
+        Square.save_to_file(None)
+        with open("Square.json", "r") as file:
+            contents = file.read()
+            self.assertEqual(eval(contents), equal)
+
     def test_load_empty_json(self):
         """Test empty list to and from JSON."""
         Square.save_to_file([])
@@ -244,6 +256,23 @@ class TestSquare(unittest.TestCase):
     def test_missing_json_file(self):
         """Test missing JSON file."""
         self.assertEqual(Square.load_from_file(), [])
+
+    def test_create(self):
+        d = {'id': 89}
+        s = Square.create(**d)
+        self.assertEqual(s.id, 89)
+
+        d = {'id': 89, 'size': 1}
+        s = Square.create(**d)
+        self.assertEqual(s.size, 1)
+
+        d = {'id': 89, 'size': 1, 'x': 2}
+        s = Square.create(**d)
+        self.assertEqual(s.x, 2)
+
+        d = {'id': 89, 'size': 1, 'x': 2, 'y': 3}
+        s = Square.create(**d)
+        self.assertEqual(s.y, 3)
 
     def test_pep8(self):
         """Test PEP8."""

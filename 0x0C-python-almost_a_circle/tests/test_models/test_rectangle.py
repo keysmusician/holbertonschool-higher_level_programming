@@ -103,7 +103,13 @@ class TestRectangle(unittest.TestCase):
     def test_display(self):
         """Test display."""
         r = Rectangle(1, 1)
-        self.assertEqual(r.display(), None)
+        self.assertEqual(r.display(), "#\n")
+
+        r = Rectangle(1, 1, 1)
+        self.assertEqual(r.display(), " #\n")
+
+        r = Rectangle(1, 1, 1, 1)
+        self.assertEqual(r.display(), "\n #\n")
 
         # Bad argument count
         with self.assertRaises(TypeError):
@@ -234,13 +240,19 @@ class TestRectangle(unittest.TestCase):
         compare = eval('[{"x": 2, "y": 8, "id": 1, "height": 7, "width": 10}]')
         self.assertEqual(eval(json_dictionary), compare)
 
-    def test_save_to_json(self):
+    def test_save_to_file(self):
         """Test JSON string to file for Rectangle."""
         equal = [{"x": 2, "y": 8, "id": 1, "height": 7, "width": 10},
                  {"x": 0, "y": 0, "id": 2, "height": 4, "width": 2}]
         r1 = Rectangle(10, 7, 2, 8, id=1)
         r2 = Rectangle(2, 4, id=2)
         Rectangle.save_to_file([r1, r2])
+        with open("Rectangle.json", "r") as file:
+            contents = file.read()
+            self.assertEqual(eval(contents), equal)
+
+        equal = []
+        Rectangle.save_to_file(None)
         with open("Rectangle.json", "r") as file:
             contents = file.read()
             self.assertEqual(eval(contents), equal)
@@ -254,6 +266,27 @@ class TestRectangle(unittest.TestCase):
     def test_missing_json_file(self):
         """Test missing JSON file."""
         self.assertEqual(Rectangle.load_from_file(), [])
+
+    def test_create(self):
+        d = {'id': 89}
+        r = Rectangle.create(**d)
+        self.assertEqual(r.id, 89)
+
+        d = {'id': 89, 'width': 1}
+        r = Rectangle.create(**d)
+        self.assertEqual(r.width, 1)
+
+        d = {'id': 89, 'width': 1, 'height': 2}
+        r = Rectangle.create(**d)
+        self.assertEqual(r.height, 2)
+
+        d = {'id': 89, 'width': 1, 'height': 2, 'x': 3}
+        r = Rectangle.create(**d)
+        self.assertEqual(r.x, 3)
+
+        d = {'id': 89, 'width': 1, 'height': 2, 'x': 3, 'y': 4}
+        r = Rectangle.create(**d)
+        self.assertEqual(r.y, 4)
 
     def test_pep8(self):
         """Test PEP8."""
