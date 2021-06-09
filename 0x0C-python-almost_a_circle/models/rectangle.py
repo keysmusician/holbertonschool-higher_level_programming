@@ -3,8 +3,6 @@
 Rectangle class definition.
 
 """
-
-
 from .base import Base
 
 
