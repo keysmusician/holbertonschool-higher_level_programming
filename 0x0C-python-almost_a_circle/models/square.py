@@ -50,5 +50,9 @@ class Square(Rectangle):
 
     def to_dictionary(self):
         """Return this object's dictionary of attributes."""
-        keys = ['id', 'size', 'x', 'y']
-        return {key: getattr(self, key) for key in keys}
+        return {
+            "id": self.id,
+            "size": self.size,
+            "x": self.x,
+            "y": self.y
+        }
