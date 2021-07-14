@@ -32,6 +32,10 @@ In this project, I learned about **SQL** and **relational databases** and wrote 
 * `14-average.sql`
 * `15-groups.sql`
 * `16-no_link.sql`
+* `100-move_to_utf8.sql`
+* `101-avg_temperatures.sql`
+* `102-top_city.sql`
+* `103-max_state.sql`
 * `README.md`
 
 ## Author
