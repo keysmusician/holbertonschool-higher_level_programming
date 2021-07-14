@@ -12,7 +12,7 @@
 * [Author](#author)
 
 ## About
-In this project, I learned about **SQL** and **relational databases** and wrote simple **MySQL** scripts.
+In this project, I learned more about **SQL** including **Users and Privileges, Joins & Unions** and **database normalization**.
 
 ## Files
 
