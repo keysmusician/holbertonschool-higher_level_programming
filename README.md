@@ -30,6 +30,7 @@ These projects exhibit my understanding of **high-level programming** concepts. 
 11. [0x0A. Python - Inheritance](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x0A-python-inheritance)
 12. [0x0B. Python - Input/Output](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x0B-python-input_output)
 13. [0x0C. Python - Almost a circle](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x0C-python-almost_a_circle)
+14. [0x0D. SQL - Introduction](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x0D-SQL_introduction)
 
 ## Author
 Justin Masayda [@keysmusician](https://github.com/keysmusician)
