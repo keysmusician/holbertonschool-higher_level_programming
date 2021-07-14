@@ -12,7 +12,7 @@
 * [Author](#author)
 
 ## About
-In this project, I learned about **SQL** and wrote simple scripts for **MySQL.**
+In this project, I learned about **SQL** and **relational databases** and wrote simple **MySQL** scripts.
 
 ## Files
 * `0-list_databases.sql`
