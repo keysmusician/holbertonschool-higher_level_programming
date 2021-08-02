@@ -15,6 +15,8 @@ Assignments in [Holberton School's](https://www.holbertonschool.com/) Foundation
 ## About
 These projects exhibit my understanding of **high-level programming** concepts. I learned these concepts through the languages **Python, SQL and JavaScript**.
 
+_Ignore the gap from 0x0F–0x11._
+
 ## Projects
 ### Trimester 2:
 1. [0x00. Python - Hello, World](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/main/0x00-hello_world)
