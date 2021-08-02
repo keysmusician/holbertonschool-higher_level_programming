@@ -12,7 +12,7 @@
 * [Author](#author)
 
 ## About
-I practiced basic **JavaScript** in this project.
+I practiced basic **JavaScript** in this project using **Node.js**.
 
 ## Files
 * `0-javascript_is_amazing.js`
