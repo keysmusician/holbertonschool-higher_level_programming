@@ -7,5 +7,5 @@ if (!size) {
 }
 
 for (let row = size; row > 0; row--) {
-  console.log('x'.repeat(size));
+  console.log('X'.repeat(size));
 }
