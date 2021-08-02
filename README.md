@@ -13,7 +13,7 @@ Assignments in [Holberton School's](https://www.holbertonschool.com/) Foundation
 * [Author](#author)
 
 ## About
-These projects exhibit my understanding of **high-level programming** concepts. These concepts were practiced using **Python**.
+These projects exhibit my understanding of **high-level programming** concepts. I learned these concepts through the languages **Python, SQL and JavaScript**.
 
 ## Projects
 ### Trimester 2:
@@ -31,6 +31,12 @@ These projects exhibit my understanding of **high-level programming** concepts. 
 12. [0x0B. Python - Input/Output](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x0B-python-input_output)
 13. [0x0C. Python - Almost a circle](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x0C-python-almost_a_circle)
 14. [0x0D. SQL - Introduction](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x0D-SQL_introduction)
+15. [0x0E. SQL - More queries](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x0E-SQL_more_queries)
+
+_Gap from 0x0F–0x11 ostensibly due to changes in the curriculum._
+
+16. [0x12. JavaScript - Warm up](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x12-javascript-warm_up)
+
 
 ## Author
 Justin Masayda [@keysmusician](https://github.com/keysmusician)
