@@ -34,6 +34,7 @@ These projects exhibit my understanding of **high-level programming** concepts. 
 15. [0x0E. SQL - More queries](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x0E-SQL_more_queries)
 
 _Gap from 0x0F–0x11 ostensibly due to changes in the curriculum._
+
 16. [0x12. JavaScript - Warm up](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x12-javascript-warm_up)
 
 
