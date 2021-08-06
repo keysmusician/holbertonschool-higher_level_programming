@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 Lists all states matching the name argument from the database
-`hbtn_0e_0_usa`.
+`hbtn_0e_0_usa`. Safe from SQL injections.
 
 """
 if __name__ == "__main__":
