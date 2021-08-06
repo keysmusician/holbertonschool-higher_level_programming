@@ -14,8 +14,10 @@ if __name__ == "__main__":
     state_name = sys.argv[4]
 
     db = MySQLdb.connect(user=username, passwd=password, db=database)
-    db.query("""SELECT * FROM states ORDER BY states.id ASC;""")
-    rows = db.store_result()
-    for row in rows.fetch_row(0):
-        if row[1] == state_name:
-            print(row)
+    query = """
+            SELECT * FROM states WHERE name = '{}' ORDER BY states.id ASC;
+            """.format(state_name)
+    db.query(query)
+    result = db.store_result()
+    for row in result.fetch_row(0):
+        print(row)
