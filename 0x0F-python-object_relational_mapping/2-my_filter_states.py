@@ -15,7 +15,10 @@ if __name__ == "__main__":
 
     db = MySQLdb.connect(user=username, passwd=password, db=database)
     query = """
-            SELECT * FROM states WHERE name = '{}' ORDER BY states.id ASC;
+            SELECT *
+            FROM states
+            WHERE name = '{}'
+            ORDER BY states.id ASC;
             """.format(state_name)
     db.query(query)
     result = db.store_result()
