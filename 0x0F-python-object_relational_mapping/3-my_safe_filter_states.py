@@ -29,3 +29,6 @@ if __name__ == "__main__":
     # Print the results
     for row in cursor.fetchall():
         print(row)
+
+    cursor.close()
+    db.close()

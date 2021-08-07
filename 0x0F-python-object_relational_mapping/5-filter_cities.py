@@ -31,3 +31,4 @@ if __name__ == "__main__":
     print(result)
 
     cursor.close()
+    db.close()
