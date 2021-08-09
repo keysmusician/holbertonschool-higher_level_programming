@@ -8,6 +8,7 @@ Base = declarative_base()
 
 
 class State(Base):
+    """State class corresponding to MySQL `states` table."""
     __tablename__ = "states"
 
     id = sqlalchemy.Column(
