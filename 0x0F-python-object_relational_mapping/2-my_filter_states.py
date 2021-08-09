@@ -23,11 +23,8 @@ if __name__ == "__main__":
             WHERE name = '{}'
             ORDER BY states.id ASC;
             """.format(state_name)
-    c = db.cursor()
-    c.execute(query)
-    record = c.fetchall()
-    for row in record:
-        if row[1][:1] == "N":
-            print("({}, \'{}\')".format(row[0], row[1]))
-    c.close()
+    cursor = db.cursor()
+    cursor.execute(query)
+    print(cursor.fetchone())
+    cursor.close()
     db.close()
