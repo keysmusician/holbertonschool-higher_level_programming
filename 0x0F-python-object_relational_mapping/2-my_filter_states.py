@@ -20,11 +20,13 @@ if __name__ == "__main__":
     query = """
             SELECT *
             FROM states
-            WHERE name = "{}"
+            WHERE name = '{}'
             ORDER BY states.id ASC;
             """.format(state_name)
     cursor = db.cursor()
     cursor.execute(query)
-    print(cursor.fetchone())
+    record = cursor.fetchall()
+    for row in record:
+        print(row)
     cursor.close()
     db.close()
