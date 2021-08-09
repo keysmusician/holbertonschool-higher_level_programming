@@ -9,7 +9,7 @@ Base = declarative_base()
 
 
 class City(Base):
-    """`City` class corresponding to MySQL `cities` table."""
+    """Class corresponding to MySQL `cities` table."""
     __tablename__ = "cities"
 
     id = sqlalchemy.Column(
