@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Class definition of a `State`. Connect to a DB using SQL Alchemy."""
+"""Class definition of a `State`. Connect to a DB using SQLAlchemy."""
 import sqlalchemy
 from sqlalchemy.sql.sqltypes import Integer, String
 from sqlalchemy.ext.declarative import declarative_base
