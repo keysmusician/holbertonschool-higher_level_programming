@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+"""Class definition of a `State`. Connect to a DB using SQLAlchemy."""
+import sqlalchemy
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import relationship
+from sqlalchemy.sql.sqltypes import Integer, String
+
+Base = declarative_base()
+
+
+class State(Base):
+    """Class corresponding to MySQL `states` table."""
+    __tablename__ = "states"
+
+    id = sqlalchemy.Column(
+        Integer, unique=True, primary_key=True, autoincrement=True)
+
+    name = sqlalchemy.Column(String(128), nullable=False)
+
+    cities = relationship("City", backref="state",
+                          cascade="all, delete-orphan")
