@@ -23,7 +23,9 @@ This project was about **HTTP requests** and how to use **cURL** to view and man
 * `5-post_params.sh`
 * `6-peak.py`
 * `6-peak.txt`
+* `100-status_code.sh`
 * `README.md`
+
 
 ## Author
 Justin Masayda [@keysmusician](https://github.com/keysmusician)
