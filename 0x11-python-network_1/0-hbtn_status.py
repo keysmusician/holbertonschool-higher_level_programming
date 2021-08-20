@@ -11,5 +11,5 @@ Body response:\n\
 \t- type: {}\n\
 \t- content: {}\n\
 \t- utf8 content: {}\
-        """.format(type(html), html, str(html, encoding='utf-8'))
+""".format(type(html), html, str(html, encoding='utf-8'))
     )
