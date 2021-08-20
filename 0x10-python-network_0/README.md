@@ -15,6 +15,15 @@
 This project was about **HTTP requests** and how to use **cURL** to view and manipulate them.
 
 ## Files
+* `0-body_size.sh`
+* `1-body.sh`
+* `2-delete.sh`
+* `3-methods.sh`
+* `4-header.sh`
+* `5-post_params.sh`
+* `6-peak.py`
+* `6-peak.txt`
+* `README.md`
 
 ## Author
 Justin Masayda [@keysmusician](https://github.com/keysmusician)
