@@ -6,9 +6,6 @@ Sends a POST request with a letter as a parameter.
 import requests
 import sys
 
-from requests import exceptions
-
-
 if __name__ == '__main__':
     url = "http://0.0.0.0:5000/search_user"
 
