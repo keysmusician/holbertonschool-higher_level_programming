@@ -7,8 +7,6 @@ body of the response.
 import requests
 import sys
 
-from requests.api import post
-
 
 if __name__ == '__main__':
     url = sys.argv[1]
