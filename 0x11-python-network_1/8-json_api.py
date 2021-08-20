@@ -22,6 +22,9 @@ if __name__ == '__main__':
 
     try:
         decoded = response.json()
-        print("[{}] {}".format(decoded["id"], decoded["name"]))
-    except:
+        if decoded:
+            print("[{}] {}".format(decoded.get("id"), decoded.get("name")))
+        else:
+            print("No result")
+    except ValueError:
         print("Not a valid JSON")
