@@ -13,5 +13,5 @@ if __name__ == "__main__":
         if idx == 10:
             break
         print("{}: {}".format(
-            commit.get("sha"), commit.get("author").get("name"))
+            commit.get("sha"), commit.get("commit").get("author").get("name"))
         )
