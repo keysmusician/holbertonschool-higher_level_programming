@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 """Uses the GitHub API to display your GitHub ID."""
-from requests import get
+import requests
 from requests.auth import HTTPBasicAuth
 from sys import argv
+
+
 if __name__ == "__main__":
+    username = argv[1]
+    password = argv[2]
     url = 'https://api.github.com/user'
-    r = get(url, auth=HTTPBasicAuth(argv[1], argv[2]))
-    try:
-        info = r.json()
-        print(info['id'])
-    except:
-        print('None')
+    response = requests.get(url, auth=HTTPBasicAuth(username, password))
+    info = response.json()
+    print(info.get('id'))
