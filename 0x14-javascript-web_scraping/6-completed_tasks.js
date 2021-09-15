@@ -3,20 +3,12 @@
 const request = require('request');
 const apiUrl = process.argv[2].concat('?completed=true');
 request(apiUrl, (error, response, body) => {
-  if (error) {
-    console.error(error);
-  }
-
+  if (error) { console.error(error); }
   const tasks = JSON.parse(body);
-
   const result = {};
   for (const task of tasks) {
     const key = String(task.userId);
-    if (result[key]) {
-      result[key]++;
-    } else {
-      result[key] = 1;
-    }
+    result[key] ? result[key]++ : result[key] = 1;
   }
   console.log(result);
 });
