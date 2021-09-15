@@ -1,18 +1,14 @@
 #!/usr/bin/node
+// Print the number of completed tasks per user.
 const request = require('request');
-const GET = request.get;
-const url = process.argv[2];
-
-GET(url, (err, res, body) => {
-  if (err) return (console.log(err));
-  const data = JSON.parse(body);
-  const tasks = {};
-
-  for (let x = 0; x < data.length; x++) {
-    if (data[x].completed) {
-      const id = data[x].userId;
-      tasks[id] !== undefined ? tasks[id] += 1 : tasks[id] = 1;
-    }
+const apiUrl = process.argv[2].concat('?completed=true');
+request(apiUrl, (error, response, body) => {
+  if (error) return console.error(error);
+  const tasks = JSON.parse(body);
+  const result = {};
+  for (const task of tasks) {
+    const key = String(task.userId);
+    result[key] ? result[key]++ : result[key] = 1;
   }
-  console.log(tasks);
+  console.log(result);
 });
