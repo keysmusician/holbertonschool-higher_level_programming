@@ -12,7 +12,7 @@
 * [Author](#author)
 
 ## About
-In this project, I learned how to do **web scraping**.
+In this project, I learned how to query **APIs**.
 
 ## Files
 * `README.md`
