@@ -43,6 +43,7 @@ _inconsistent enumeration due to changes in the curriculum._
 19. [0x10. Python - Network #0](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x10-python-network_0)
 20. [0x11. Python - Network #1](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x11-python-network_1)
 21. [0x14. JavaScript - Web scraping](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x14-javascript-web_scraping)
+22. [0x15. JavaScript - Web jQuery](https://github.com/keysmusician/holbertonschool-higher_level_programming/tree/master/0x15-javascript-web_jquery)
 
 
 ## Author
