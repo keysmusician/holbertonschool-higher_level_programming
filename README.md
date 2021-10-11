@@ -5,7 +5,7 @@
 </p>
 
 # Higher-level programming - Python
-Assignments in [Holberton School's](https://www.holbertonschool.com/) Foundations curriculum.
+High-level programming projects in [Holberton School's](https://www.holbertonschool.com/) Foundations curriculum.
 
 ## Table of Contents
 * [About](#about)
