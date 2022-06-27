@@ -5,7 +5,7 @@
 </p>
 
 # Higher-level programming - Python
-Assignments in [Holberton School's](https://www.holbertonschool.com/) Foundations curriculum.
+High-level programming projects in [Holberton School's](https://www.holbertonschool.com/) Foundations curriculum.
 
 ## Table of Contents
 * [About](#about)
@@ -49,11 +49,12 @@ _Inconsistent enumeration due to changes in the curriculum._
 ## Author
 Justin Masayda [@keysmusician](https://github.com/keysmusician)
 <pre align="center">
-            _   _       _   _   _       _   _       _   _   _      
-     ___//|_//|_____//|_//|_//|_____//|_//|_____//|_//|_//|___
-     /  /// ///  /  /// /// ///  /  /// ///  /  /// /// ///  / |
-   /  ||/ ||/  /  ||/ ||/ ||/  /  ||/ ||/  /  ||/ ||/ ||/  / /
- /___/___/___/___/___/___/___/___/___/___/___/___/___/___/ /
-|___|___|___|___|___|___|___|___|___|___|___|___|___|___|/
+        _   _       _   _   _       _   _       _   _   _     
+    ___//|_//|_____//|_//|_//|_____//|_//|_____//|_//|_//|___ 
+   /  /// ///  /  /// /// ///  /  /// ///  /  /// /// ///  / |
+  /  ||/ ||/  /  ||/ ||/ ||/  /  ||/ ||/  /  ||/ ||/ ||/  / / 
+ /___/___/___/___/___/___/___/___/___/___/___/___/___/___/ /  
+ |___|___|___|___|___|___|___|___|___|___|___|___|___|___|/   
+ 
 </pre>
 <p><span style="font-family: 'Lucida Console'; line-height: 14px; font-size: 14px; display: inline-block;">&nbsp;</span></p>  
